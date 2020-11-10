@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hotel XD</title>
+        <title>Hotel Trivago</title>
         <style>
             legend {
                 font-style: oblique;
-                font-size: 15pt;
-                color:gold;
+                font-size: 20pt;
+                color:rgb(255, 0, 0);
+                background-color: cornsilk;
             }
             body {
                 background-image:url("foto.jpg")
 
             }
             label{
-                color:rgb(0, 255, 157);
-
+                color:rgb(255, 230, 0);
+                background-color: black;
             }
             h1 {
                 color: gold;
@@ -22,10 +23,10 @@
         </style>
     </head>
     <body>
-        <h1>Rerserva</h1>
+        <h1>Mi Hotel reserva online</h1>
         <form action="mailto:reservas@mihotel.com" method="GET">
             <fieldset>
-                <legend>Datos Personales</legend>
+                <legend>Datos Del Cliente</legend>
                 
                 <label>Nombre: </label><input type="text" name="Nombre">
                 <label>Apellidos: </label><input type="text" name="Apellidos">
@@ -37,7 +38,7 @@
 
             </fieldset>
             <fieldset>
-                <legend>Fecha de llegada</legend>
+                <legend>Fecha de Entrada</legend>
 
                 <label>Día: </label><select name="día">
 
@@ -92,7 +93,7 @@
 
             </fieldset>
             <fieldset>
-                <legend>Estancia</legend>
+                <legend>Habitacion</legend>
 
                 <label>Tipo de habitación: </label>
                 <input type="radio" name="habitación" value="simple"> <label>Simple</label>
