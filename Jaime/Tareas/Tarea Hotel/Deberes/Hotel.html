@@ -3,6 +3,13 @@
     <head>
         <title>Hotel Trivago</title>
         <style>
+            #id1{
+                background-color: cyan;
+            }
+            fieldset{
+                background-color: cornsilk;
+
+            }
             legend {
                 font-style: oblique;
                 font-size: 20pt;
@@ -14,8 +21,7 @@
 
             }
             label{
-                color:rgb(255, 230, 0);
-                background-color: black;
+                color:rgb(0, 0, 2);
             }
             h1 {
                 color: gold;
@@ -107,7 +113,7 @@
                 <input type="checkbox" name="Otros" value="cena"> <label>Cena</label>
                 <input type="checkbox" name="Otros" value="cama suplementaria"> <label>Cama suplementaria</label>
             </fieldset>
-            <label>Comentarios: </label><br>
+            <label id="id1">Comentarios: </label><br>
             <textarea name="Comentarios" cols="50" rows="5"></textarea><br>
             <Input type="submit" name="Enviar">
             <input type="reset" value="Borrar">
