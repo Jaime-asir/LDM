@@ -27,6 +27,7 @@ body
 {
 background-color: aqua;
 background-image: url(bgimage.jpg);
+opacity: 90%;
 }
 #aficciones
 {
