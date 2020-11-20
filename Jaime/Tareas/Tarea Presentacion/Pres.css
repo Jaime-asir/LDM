@@ -1,1 +1,54 @@
-#Msg 
+#MSG 
+{
+text-align: center;
+background-color: rgb(255, 0, 0);
+opacity: 90%;
+}
+h1 {
+    color: azure;
+}
+#tabla{
+    text-align: center;
+    width: 64%;
+    height:60%;
+    background-color: gold;
+}
+#Estudios
+{
+background-color: rgb(25, 0, 255);
+opacity: 90%;
+color: white;
+}
+.Estud
+{
+    text-align: center;
+}
+body
+{
+background-color: aqua;
+background-image: url(bgimage.jpg);
+}
+#aficciones
+{
+background-color: honeydew;
+color: red;
+opacity: 90%;
+}
+.Aficc
+{
+    text-align: center;
+}
+legend
+{
+font-size: 26px;
+background-color: crimson;
+color: ghostwhite;
+}
+ul
+{
+text-align: left;
+}
+.tabla
+{
+    opacity: 90%;
+}
