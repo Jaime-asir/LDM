@@ -6,4 +6,28 @@
 .header {
     background-color: brown;
     text-align: center;
+    opacity: 90%;
 }
+body {
+    background-image: url(bg.jpg);
+    background-size: 130% ;
+}
+img {
+    margin-right: 5px;
+    border: 1px double rgb(255, 255, 255);
+}
+fieldset {
+    border:2px groove #ccc; 
+    background:#F8ECE0; 
+    color:#000; 
+    }
+    legend 
+    {
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+    #Parrafos {
+        background-color: rgb(251, 255, 0);
+        color: black;
+    }
