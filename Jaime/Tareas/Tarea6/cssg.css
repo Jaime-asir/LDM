@@ -1,10 +1,10 @@
 body {
-    background-color: hsl(145, 50%, 35%);
+    background-color: #2D8652;
     font-family: sans-serif;
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 55px;
     text-transform: capitalize;
 }
 
@@ -19,17 +19,17 @@ p {
 }
 
 .salmon {
-    color: hsl(35, 100%, 85%);
+    color: #FFDFB3;
     font-family: sans-serif;
 }
 
 .naranja {
-    color: hsl(35, 100%, 55%);
+    color: 	#FF9F1A;
     font-family: monospace;
     font-size: 200%;
 }
 
 .rojo {
-    color: hsl(345, 80%, 50%);
+    color: #E6194C;
     font-family: cursive;
 }
