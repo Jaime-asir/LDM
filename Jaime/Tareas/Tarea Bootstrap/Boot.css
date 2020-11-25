@@ -26,8 +26,12 @@ fieldset {
         background-color: red;
         color: white;
         text-align: center;
+        width: 100px;
     }
-    #Parrafos {
+    .Parrafos {
         background-color: rgb(251, 255, 0);
         color: black;
+    }
+    #Parrafos {
+        opacity: 90%;
     }
