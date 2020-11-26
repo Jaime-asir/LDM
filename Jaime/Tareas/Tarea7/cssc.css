@@ -1,14 +1,14 @@
 body {
     background-color: #d3dbde;
-    font-family: sans-serif;
     text-align: justify;
+    font-family: sans-serif;
 }
 
 h1 {
     color: #333333;
-    font-size: 250%;
-    text-align: center;
+    font-size: 240%;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h2 {
@@ -20,8 +20,8 @@ h2 {
 
 h3 {
     background-color: #98aab3;
-    color: hsl(200, 15%, 40%);
-    font-size: 130%;
+    color: #576b75;
+    font-size: 120%;
     font-style: italic;
 }
 p {
@@ -30,14 +30,14 @@ p {
 strong {
     color: #006699;
     font-weight: normal;
-}
+}/*  Segun lo que tengo entendido esto es un elemento de bloque   */
 em {
     color: #0088cc;
     font-style: normal;
     font-weight: bold;
-}
+}/*  Segun lo que tengo entendido esto tambien es un elemento de bloque   */
 #creditos {
-    background-color: white;
     font-weight: bold;
     text-align: right;
+    background-color: white;
 }
