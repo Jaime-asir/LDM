@@ -1,0 +1,48 @@
+body {
+    background-color: #267352 ;
+    font-family: Arial ;
+    font-size: 15px ;
+}
+h1 {
+color: white ;
+text-align: left ;
+text-shadow:5px 4px black ;
+text-transform: uppercase ;
+}
+p {
+text-align: justify ;
+}
+.intro {
+border: 8px solid ;
+border-radius: 15px;
+margin-left:25% ;
+margin-right:25% ;
+padding: 10px ;
+background-color:white ;
+}
+.estilo1 {
+border:15px solid #802400 ;
+border-top-left-radius: 10px ;
+border-bottom-left-radius: 10px ;
+margin-right:50% ;
+padding:10px ;
+background-color:#ac5a39 ;
+color:white;
+}
+.estilo2 {
+border:10px solid #804800 ;
+border-top-right-radius: 10px ;
+border-bottom-right-radius:10px ;
+margin-left:50% ;
+padding: 7px ;
+background-color: #ac7a39 ;
+color: white ;
+}
+.estilo3 {
+border:4px dashed #2f6fa4;
+margin-left:25% ;
+margin-right: 25%;
+padding: 10px;
+background-color:#004680 ;
+color:white ;
+}
