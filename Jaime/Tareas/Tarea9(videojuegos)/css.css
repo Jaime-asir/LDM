@@ -1,0 +1,44 @@
+body{
+    color: white;
+    background-color:black;
+    text-align: justify;
+}
+@font-face {
+    font-family: monoton;
+    src: url(monoton.woff2);
+}
+div {
+    background-color: black;
+}
+h1 {
+    font-family: monoton;
+    color: greenyellow;
+    letter-spacing: 10px;
+    text-transform: unset;
+    text-align: center;
+}
+h2 { 
+    background-color:#05c705;
+    letter-spacing: 10px;
+}
+.container {
+    margin-left:100px;
+    margin-right: 100px;
+    background-color: black;
+}
+.izquierda {
+    background-image: url(matrix.png);
+}
+.pong{ 
+    border: 2px solid white ;
+}
+.space{ 
+    border: 2px solid white ;
+}
+.pac{ 
+    border: 2px solid white ;
+}
+img {
+    float: left bottom;
+    width: 100px;
+}
