@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <htlm>
-    <head>
-        <title>Receta</title>
-        <style>
-            #Header {
-                background-color: darkseagreen;
-            }
 
-            #ingredientes {background-color: darkslategrey;}
-        
+    <head>
+
+        <title>Sopa de cebolla</title>
+        <style>
+            h1{
+                font-size: 32pt;
+                font-style: oblique;
+                font-weight: 200;
+                color: blue;
+            }
+            legend{
+                font-size: 16pt;
+                font-style: italic;
+                font-weight: 400;
+                color: blue;
+            }
+            h2{
+                font-size: 24pt;
+                font-style: oblique;
+                font-weight: 200;
+                color: blue;
+            }
+            li{
+                font-size: 12pt;
+                font-style: oblique;
+                font-weight: 1000;
+                font-style: italic;
+                color:aliceblue;
+            }
         </style>
+
     </head>
-        <body >
+    <body background="cocina.jpg">
+
+        <h1><p>Hoy sopa de cebolla.</p></h1>
+        <br>
+
+        <a href="#ingredientes"><button><b>Ingredientes</b></button></a>
+        <a href="#proceso"><button><b>Pasos</b></button></a>
+        
+        <fieldset id="ingredientes">
             
-            <div id="Header"><h1 align="center"><p>Hoy sopa de cebolla.</p></h1></div>
-            <br>
-            <a href="#Proceso" ><button align="center"><b>Pulsa para ver el Proceso</b></button></a>
-            <br>
-            <div id="Ingredientes">
-            <h4>Ingredientes:</h4>
-            <br>
-            <br><h3><ul>
+            <legend>Ingredientes</legend>
+            
+            <h4><ul>
+                
                 <li>1 Kg. de cebolla.</li>
                 <li>2 L. de caldo de carne.</li>
                 <li>100 gr. de mantequilla.</li>
@@ -30,17 +56,34 @@
                 <li>Tomillo.</li>
                 <li>1 hoja de laurel.</li>
                 <li>Pimienta.</li>
-            </ul></h3>
-            </div>
-            <br><br><h4 id="Proceso">Proceso:</h4>
-            <br>
-            <br>
-            <h3><ul>
+
+            </ul></h4>
+
+        </fieldset>
+
+        <br>
+        <br>
+        <h2><i>Manos a la obra</i></h2>
+        <br>
+
+        <fieldset id="proceso">
+            <legend>Proceso</legend>
+            
+            <h4><ol>
+
                 <li>Pelar y partir las cebollas en rodajas finas.</li>
                 <li>Rehogarlas con mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse </li>
                 <li>Ponerlo en una cazuela con el caldo, el tomillo y el laurel. </li>
-                <li>Dejar cocer a fuego lento durante 15 minutos.</li>
-                <li>poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</li>
-                </ul>
-            </body>
-            </html>
+                <li> Dejar cocer a fuego lento durante 15 minutos.</li>
+                <li> Poner las rebanadas de pan encima, espolvorear el queso y gratinaral horno.</li>
+
+            </ol></h4>
+
+        </fieldset>
+        <br>
+        <h2><i>Asi tendría que quedar nuestra sopa de cebolla.</i></h2>
+        <img src="descarga.jpg"></img>
+       
+    </body>
+
+</html>
