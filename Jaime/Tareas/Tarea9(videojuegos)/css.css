@@ -41,12 +41,19 @@ h2 {
 .space img {float: left;
     width: 130px;
 }
+.pong img{float: right;
+    width: 130px;
+}
+.pac img{float: right;
+    width: 130px;
+    margin-left: 15px;
+}
 img {
     border:2px white solid ;
     outline: 2px greenyellow solid;
+    margin-right: 9px;
 }
 p {
-margin-left: 5px;
 padding-left:20px ;
 padding-right: 20px;
 }
