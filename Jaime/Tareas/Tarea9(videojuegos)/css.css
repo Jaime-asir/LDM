@@ -1,15 +1,17 @@
 body{
     color: white;
-    background-color:black;
+    background-image: url(matrix.png),url(matrix2.png);
+    background-position: left,right;
+    background-repeat: repeat-y,repeat-y;
     text-align: justify;
+    background-size: 100px,100px;
+    background-color:black;
 }
 @font-face {
     font-family: monoton;
     src: url(monoton.woff2);
 }
-div {
-    background-color: black;
-}
+
 h1 {
     font-family: monoton;
     color: greenyellow;
@@ -20,14 +22,12 @@ h1 {
 h2 { 
     background-color:#05c705;
     letter-spacing: 10px;
+    margin-top: 0px;
 }
 .container {
     margin-left:100px;
     margin-right: 100px;
     background-color: black;
-}
-.izquierda {
-    background-image: url(matrix.png);
 }
 .pong{ 
     border: 2px solid white ;
@@ -38,7 +38,15 @@ h2 {
 .pac{ 
     border: 2px solid white ;
 }
+.space img {float: left;
+    width: 130px;
+}
 img {
-    float: left bottom;
-    width: 100px;
+    border:2px white solid ;
+    outline: 2px greenyellow solid;
+}
+p {
+margin-left: 5px;
+padding-left:20px ;
+padding-right: 20px;
 }

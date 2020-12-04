@@ -1,0 +1,63 @@
+.bloque1{
+    background-image:url(manchas.png);
+    background-position:left bottom;
+    background-repeat: repeat;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 2px solid black;
+    color:white ;
+}
+.bloque2{
+    background-image: url(fuego.svg),url(fuego.svg),url(tallos.jpg);
+    background-position:left bottom, right bottom, left top ;
+    background-size: 20px,20px,300px;
+    background-repeat: no-repeat, no-repeat, repeat;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 2px solid black;
+    color: orange;
+}
+.bloque3{
+    background-image: url(ojo.svg),url(hexagonos.jpg);
+    background-position:center;
+    background-size: 200px,150px;
+    background-repeat: no-repeat, repeat;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 2px solid black;
+    color:brown ;
+}
+.bloque4{
+    background-image: url(caballo.svg),url(estrellas.png);
+    background-position:bottom;
+    background-size: 50px,200px;
+    background-repeat: repeat-x, repeat;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 2px solid black;
+    color: green;
+}
+div {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+body{
+    background-image: url(corazon-1.svg),url(corazon-2.svg);
+    background-position:left top, right top ;
+    background-repeat: repeat-y;
+    background-size: 40px,40px;
+    background-color: blanchedalmond;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.bloque { font-weight: bold;
+
+}
+p {
+    padding-left: 25%;
+    padding-right: 25%;
+    
+}
