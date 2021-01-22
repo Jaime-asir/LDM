@@ -3,3 +3,4 @@
 <!ELEMENT ingredientes (#PCDATA)>
 <!ELEMENT procedimiento (#PCDATA)>
 
+

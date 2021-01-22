@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE addresss >
+<!DOCTYPE aviso SYSTEM "aviso.dtd">
 <aviso>
     <titulo>...</titulo>
-    <parrafos>
-        <parrafo>...</parrafo>
-        <parrafo>...</parrafo>
-    </parrafos>
-    <graficos>
-        <grafico>...</grafico>    
-        <grafico>...</grafico>
-    </graficos>
+    <parrafo>...</parrafo>
+    <grafico>...</grafico>
+    <parrafo>...</parrafo>
+    <grafico>...</grafico>
 </aviso>
