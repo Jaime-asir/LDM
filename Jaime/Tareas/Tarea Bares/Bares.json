@@ -1,0 +1,80 @@
+{
+    "Ciudad": "Palencia",
+    "Comunidad":"CyL",
+    "Habitantes":"75.000",
+   
+
+    "Bares": [
+        {
+            "Nombre":"Lina Morgan Freeman",
+            "Coste":"Muy Economico",
+            "Adaptacion Movilidad Reducida":"No",
+            "Direccion": "C/Rizarzuela, 8",
+            "Tipo": "Pub",
+            "Recomendable":"5/5",
+            "Ubicacion": "https://www.google.es/maps/place/LinaMorganFreeman/@42.0072613,-4.5307717,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b0364917ae87:0x657e1fe93d02a406!8m2!3d42.0072573!4d-4.528583"
+        }
+        ,{
+            "Nombre":"Cafe Bar Eden",
+            "Coste":"Muy Economico",
+            "Adaptacion Movilidad Reducida":"Si",
+            "Direccion": "C/Los Trigales",
+            "Tipo": "Bar de Copas",
+            "Recomendable":"3/5",
+            "Ubicacion":"https://www.google.es/maps/place/Bar+Eden/@42.0123146,-4.5300847,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b1e942e20be7:0x4b20e235368e9d09!8m2!3d42.0123106!4d-4.527896"
+        }
+        ,{
+            "Nombre":"Pio XII",
+            "Coste":"Medio",
+            "Adaptacion Movilidad Reducida":"No",
+            "Direccion": "Plaza Pío XII, 5, 34005 Palencia",
+            "Tipo": "Pub",
+            "Recomendable":"4/5",
+            "Ubicacion":"https://www.google.es/maps/place/Plaza+P%C3%ADo+XII,+Palencia/@42.0053397,-4.533199,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b0376430964d:0xf847404ed37d4191!8m2!3d42.0053357!4d-4.5310103"
+        }
+        ,{
+            "Nombre":"Tiffanys",
+            "Coste":"Muy Economico",
+            "Adaptacion Movilidad Reducida":"No",
+            "Direccion": "Calle Casañé, 14, 34002 Palencia",
+            "Tipo": "Pub",
+            "Recomendable":"5/5",
+            "Ubicacion":"https://www.google.es/maps/place/Tiffanis/@42.0113809,-4.5411571,15z/data=!4m8!1m2!2m1!1sbar+tiffanis+palencia!3m4!1s0x0:0x6953f91fa3f48d17!8m2!3d42.0024958!4d-4.5268634"
+        }
+        ,{
+            "Nombre":"Zambra",
+            "Coste":"Muy Economico",
+            "Adaptacion Movilidad Reducida":"Si",
+            "Direccion": "Calle Estrada, 5, 34002 Palencia",
+            "Tipo": "Pub",
+            "Recomendable":"4/5",
+            "Ubicacion":"https://www.google.es/maps/place/BAR+ZAMBRA/@42.0076507,-4.5317202,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b037c9bced79:0xbb4ab3a8ecc2d9f7!8m2!3d42.0076467!4d-4.5295315" 
+        }
+ ] ,
+
+ "Zonas de Ocio":[
+            {
+            "Nombre":"La Bolera Palencia",
+            "Tipo":"Bolera",
+            "Coste":"Asequible",
+            "Recomendable":"4/5",
+            "Direccion":"Av. de Casado del Alisal, 22, 34001 Palencia"
+            }
+            ,{
+            "Nombre":"Teatro Ortega",
+            "Tipo":"Teatro",
+            "Coste":"Economico",
+            "Recomendable":"5/5",
+            "Direccion":"Calle Colón, 2, BAJO, 34002 Palencia"
+            }
+
+            ,{
+            "Nombre":"Cine Avenida",
+            "Tipo":"Cien",
+            "Coste":"Economico",
+            "Recomendable":"4/5",
+            "Direccion":"Av. Valladolid, 10, BAJO, 34002 Palencia"
+            }
+        ]
+    }
+

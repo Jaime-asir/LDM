@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ciudad>Palencia</Ciudad>
+<Comunidad>Castilla y León<Comunidad>
+<Habitantes>75000<Habitantes>
+<Bares>
+    <bar>
+        <nombre>Linna Morgan Feeman</nombre>
+        <precio>Muy Economico</precio>
+        <adaptacion_para_discapacitados>No</adaptacion_para_discapacitados>
+        <direccion>C/Rizarzuela 8</direccion>
+        <tipo>Pub</tipo>
+        <recomendable>5/5</recomendable>
+        <ubicacion>https://goo.gl/maps/rXUtUniXVXkoxX817</ubicacion>
+    </bar>
+      <bar>
+        <nombre>Cafe Bar Eden</nombre>
+        <precio>Muy Economico</precio>
+        <adaptacion_para_discapacitados>Si</adaptacion_para_discapacitados>
+        <direccion>C/Los Trigales</direccion>
+        <tipo>Bar de Copas</tipo>
+        <recomendable>3/5</recomendable>
+        <ubicacion>https://www.google.es/maps/place/Bar+Eden/@42.0123146,-4.5300847,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b1e942e20be7:0x4b20e235368e9d09!8m2!3d42.0123106!4d-4.527896</ubicacion>
+    </bar>
+      <bar>
+        <nombre>Pio XII</nombre>
+        <precio>Medio</precio>
+        <adaptacion_para_discapacitados>No</adaptacion_para_discapacitados>
+        <direccion>Plaza Pío XII, 5, 34005 Palencia</direccion>
+        <tipo>Pub</tipo>
+        <recomendable>4/5</recomendable>
+        <ubicacion>https://www.google.es/maps/place/Plaza+P%C3%ADo+XII,+Palencia/@42.0053397,-4.533199,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b0376430964d:0xf847404ed37d4191!8m2!3d42.0053357!4d-4.5310103</ubicacion>
+    </bar>
+      <bar>
+        <nombre>Tiffanys</nombre>
+        <precio>Muy Economico</precio>
+        <adaptacion_para_discapacitados>No</adaptacion_para_discapacitados>
+        <direccion>Calle Casañé, 14, 34002 Palencia</direccion>
+        <tipo>Pub</tipo>
+        <recomendable>5/5</recomendable>
+        <ubicacion>https://www.google.es/maps/place/Tiffanis/@42.0113809,-4.5411571,15z/data=!4m8!1m2!2m1!1sbar+tiffanis+palencia!3m4!1s0x0:0x6953f91fa3f48d17!8m2!3d42.0024958!4d-4.5268634</ubicacion>
+    </bar>
+<bar>
+        <nombre>Zambra</nombre>
+        <precio>Muy Economico</precio>
+        <adaptacion_para_discapacitados>Si</adaptacion_para_discapacitados>
+        <direccion>Calle Estrada, 5, 34002 Palencia</direccion>
+        <tipo>Pub</tipo>
+        <recomendable>4/5</recomendable>
+        <ubicacion>https://www.google.es/maps/place/BAR+ZAMBRA/@42.0076507,-4.5317202,17z/data=!3m1!4b1!4m5!3m4!1s0xd47b037c9bced79:0xbb4ab3a8ecc2d9f7!8m2!3d42.0076467!4d-4.5295315</ubicacion>
+    </bar>
+</Bares>
+<ocio_Local>
+    <ocio>
+        <nombre>Bowling Sport</nombre>
+        <Tipo>Bolera</Tipo>
+        <Coste>Asequible</Coste>
+        <Recomendable>4/5</Recomendable>
+        <Direccion>Av. de Casado del Alisal, 22, 34001 Palencia</Direccion>
+    </ocio>
+    <ocio>
+        <nombre>Teatro Ortega</nombre>
+        <Tipo>Teatro</Tipo>
+        <Coste>Economico</Coste>
+        <Recomendable>5/5</Recomendable>
+        <Direccion>Calle Colón, 2, BAJO, 34002 Palencia</Direccion>
+    </ocio>
+        <ocio>
+        <nombre>Cine Avenida</nombre>
+        <Tipo>Cine</Tipo>
+        <Coste>Economico</Coste>
+        <Recomendable>4/5</Recomendable>
+        <Direccion>Av. Valladolid, 10, BAJO, 34002 Palencia</Direccion>
+    </ocio>
+</ocio_Local>
