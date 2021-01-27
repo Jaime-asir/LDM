@@ -1,7 +1,6 @@
 <!ELEMENT lista_de_notas (nota+)>
 <!ELEMENT nota (para, de, titulo, contenido)>
 <!ATTLIST nota
-  xmlns CDATA #FIXED ''
   dia CDATA #IMPLIED
   hora NMTOKEN #IMPLIED>
 <!ELEMENT para (#PCDATA)>
