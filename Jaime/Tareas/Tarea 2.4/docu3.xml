@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE lista_personas SYSTEM "docu3.dtd"> 
 <lista_personas>
 <persona>
 <nombre>Antonio Moreno</nombre>
