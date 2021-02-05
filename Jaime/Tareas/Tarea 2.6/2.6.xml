@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<moduloDam nombre="Lenguajes de Marcas y Sistemas de Gestión de Información" horas_semanales="4" caracter="obligatorio"> 
+	<fecha_inicio dia="15" mes="septiembre" año="2021"/> 
+	<fecha_final dia="30" mes="junio" año="2022"/> 
+
+	<alumno nota="" faltas="" > 
+		<id nombre="Ana" apellidos="Fernandez Gutiérrez" nif="16965696L"/> 
+		<datos tlf="789654321" email="ana.fdezgtrrez@hotmail.com"> 
+		<correo  direccion="C/El Percebe,13 Santander" CodigoPostal="39302"/> 
+		</datos> 
+	</alumno> 
+	<alumno nota="apto" faltas="0"> 
+		<id nombre="Pepito" apellidos="Grillo" dni="98765432H"/> 
+		<datos tlf="656566555" email="yhyh@yahoo.com"> 
+		<correo direccion="AVDA/El Pez, 5 Suances" CP="39401"/> 
+		</datos> 
+	</alumno> 
+</moduloDam>

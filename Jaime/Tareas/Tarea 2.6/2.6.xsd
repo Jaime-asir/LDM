@@ -1,0 +1,76 @@
+<xs:schema 
+    attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="moduloDam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fecha_inicio">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:integer" name="dia"/>
+                <xs:attribute type="xs:string" name="mes"/>
+                <xs:attribute type="xs:integer" name="año"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fecha_final">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:integer" name="dia"/>
+                <xs:attribute type="xs:string" name="mes"/>
+                <xs:attribute type="xs:integer" name="año"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="alumno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="nombre" use="optional"/>
+                      <xs:attribute type="xs:string" name="apellidos" use="optional"/>
+                      <xs:attribute type="xs:string" name="nif" use="optional"/>
+                      <xs:attribute type="xs:string" name="dni" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="datos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="correo">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="direccion" use="optional"/>
+                            <xs:attribute type="xs:integer" name="CodigoPostal" use="optional"/>
+                            <xs:attribute type="xs:integer" name="CP" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:integer" name="tlf" use="optional"/>
+                  <xs:attribute type="xs:string" name="email" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="nota" use="optional"/>
+            <xs:attribute type="xs:string" name="faltas" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="nombre"/>
+      <xs:attribute type="xs:integer" name="horas_semanales"/>
+      <xs:attribute type="xs:string" name="caracter"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
