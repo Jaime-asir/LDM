@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE matricula SYSTEM "docu4.dtd"> 
-<matricula>
-<personal><dni>99223366M</dni><nombre>Juan Pardo Martín</nombre><titulacion>Ingeniería Informática</titulacion><curso_academico>1997/1998</curso_academico><domicilios><domicilio tipo="familiar"><nombre>C/ Principal nº1</nombre></domicilio><domicilio tipo="habitual"><nombre>C/ Secundaria nº2</nombre></domicilio></domicilios>
+<matricula
+    xmlns="https://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com/xml docu4.xsd">
+<personal>
+    <dni>99223366M</dni>
+    <nombre>Juan Pardo Martín</nombre>
+    <titulacion>Ingeniería Informática</titulacion>
+    <curso_academico>1997/1998</curso_academico>
+    <domicilios>
+        <domicilio tipo="familiar">
+            <calle>C/ Principal nº1</calle>
+        </domicilio>
+        <domicilio tipo="habitual">
+            <calle>C/ Secundaria nº2</calle>
+        </domicilio>
+    </domicilios>
 </personal>
 <pago>
-<tipo_matricula>Matrícula Ordinaria</tipo_matricula></pago>
+    <tipo_matricula>Matrícula Ordinaria</tipo_matricula>
+</pago>
 </matricula>
