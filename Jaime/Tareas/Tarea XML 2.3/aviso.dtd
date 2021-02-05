@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 <!ELEMENT aviso (titulo, (parrafo+, grafico)*)>
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT parrafo (#PCDATA)>
 <!ELEMENT grafico (#PCDATA)>
 
 
+=======
+<!ELEMENT aviso (titulo?, parrafo+, grafico)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT parrafo (#PCDATA)>
+<!ELEMENT grafico (#PCDATA)>
+>>>>>>> 0e819db11d9d828c9cac52125e4fe0f6ce7c8410
