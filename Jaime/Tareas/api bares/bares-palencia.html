@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Pokemon List</title>
+    <title>Bares Palencia</title>
   </head>
 
   <body>
@@ -17,10 +17,13 @@
         <!--  CAMPOS SIMPLES -->
         <ul>
           <li>Ciudad: {{jsonObject.Ciudad}}</li>  
-          <li>habitantes: {{jsonObject.Habitantes}}</li>  
+          <li>Habitantes: {{jsonObject.Habitantes}}</li>  
+          <li>Comunidad: {{jsonObject.Comunidad}}</li>
         </ul>
         <h2 class="alert-heading"> Bares</h2>
-        <li v-for="Bares in jsonObject.Bares">{{Bares.Nombre}} <br> Coste: {{Bares.Coste}}<br>Adaptación Movilidad Reducida: {{Bares.Adaptación_Movilidad_Reducida}} </li>
+        <li v-for="Bares in jsonObject.Bares"><b style="font-size: 30px;"> {{Bares.Nombre}}</b> <br> Coste: {{Bares.Coste}}<br>Direccion: {{Bares.Dirección}}<br>Tipo: {{Bares.Tipo}}<br>Recomendable: {{Bares.Recomendable}} </li>
+        <h2 class="alert-heading"> Ocio</h2>
+        <li v-for="Ocio in jsonObject.Ocio"><b style="font-size: 30px;"> {{Ocio.Nombre}}</b> <br> Coste: {{Ocio.Coste}}<br>Direccion: {{Ocio.Dirección}}<br>Tipo: {{Ocio.Tipo}}<br>Recomendable: {{Ocio.Recomendable}} </li>
         
       </div>
     </div>
