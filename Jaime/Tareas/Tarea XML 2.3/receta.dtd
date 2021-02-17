@@ -1,4 +1,10 @@
 <!ELEMENT receta (titulo, ingredientes, procedimiento)>
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT ingredientes (#PCDATA)>
+<<<<<<< HEAD
 <!ELEMENT procedimiento (#PCDATA)>
+
+
+=======
+<!ELEMENT procedimiento (#PCDATA)>
+>>>>>>> 0e819db11d9d828c9cac52125e4fe0f6ce7c8410

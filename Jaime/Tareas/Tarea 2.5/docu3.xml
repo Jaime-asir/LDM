@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<<<<<<< HEAD
 <lista_personas
     xmlns="https://www.w3schools.com"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="https://www.w3schools.com/xml docu3.xsd">
+=======
+<etiqueta
+    xmlns="https://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com/xml note.xsd">
+<lista_personas>
+>>>>>>> 6edc83c4a0abc40fd389a7146c6a7a3051ca42a4
 <persona>
 <nombre>Antonio Moreno</nombre>
 <fecha_nacimiento>27/11/2008</fecha_nacimiento>

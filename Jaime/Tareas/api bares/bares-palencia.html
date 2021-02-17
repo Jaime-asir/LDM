@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Pokemon List</title>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+        <div class="alert alert-info" role="alert">
+        <h1 class="alert-heading">Ciudad: {{jsonObject.Ciudad}}</h1>
+        <!--  CAMPOS SIMPLES -->
+        <ul>
+          <li>Ciudad: {{jsonObject.Ciudad}}</li>  
+          <li>habitantes: {{jsonObject.Habitantes}}</li>  
+        </ul>
+        <h2 class="alert-heading"> Bares</h2>
+        <li v-for="Bares in jsonObject.Bares">{{Bares.Nombre}} <br> Coste: {{Bares.Coste}}<br>Adaptación Movilidad Reducida: {{Bares.Adaptación_Movilidad_Reducida}} </li>
+        
+      </div>
+    </div>
+
+    <script>
+
+      const App = new Vue({
+        el: '#app',
+        data: {
+          jsonObject: {}
+        },
+        methods: {
+            init() {
+              fetch("https://raw.githubusercontent.com/Arrako23/LDM/master/PR%C3%81CTICAS/P-2-LDM-2/ocio.json")
+              .then(response => response.json())
+              .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted(){
+            this.init()
+        }
+      })
+    </script>
+  </body>
+</html>

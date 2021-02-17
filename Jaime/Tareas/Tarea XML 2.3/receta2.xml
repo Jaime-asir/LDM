@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE receta SYSTEM "receta2.dtd">
+=======
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE receta SYSTEM "receta2.dtd">
+>>>>>>> 0e819db11d9d828c9cac52125e4fe0f6ce7c8410
 <receta>
-<parrafo>Esto es un párrafo</parrafo>
-<titulo>...</titulo>
-<ingredientes>...</ingredientes>
-<procedimiento>...</procedimiento>
+    <parrafo>Esto es un párrafo</parrafo>
+    <titulo>...</titulo>
+    <ingredientes>...</ingredientes>
+    <procedimiento>...</procedimiento>
 </receta>

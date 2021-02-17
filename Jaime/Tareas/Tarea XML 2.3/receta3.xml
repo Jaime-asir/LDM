@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+=======
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+>>>>>>> 0e819db11d9d828c9cac52125e4fe0f6ce7c8410
 <!DOCTYPE receta SYSTEM "receta3.dtd">
 <receta>
 <ingredientes>...</ingredientes>
