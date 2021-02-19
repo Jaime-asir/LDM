@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Soupa du Macaco</title>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+        <div class="alert alert-info" role="alert">
+        <h1 class="alert-heading">Nombre: {{jsonObject.nombre}}</h1>
+        <h2 class="alert-heading" v-if="jsonObject.numero > 2"><b style="color: gold;">Para {{jsonObject.numero}} {{jsonObject.tipo}}</b> </h1>
+            <h3 v-if="mostrartablaing == true">Ingredientes:</h3>
+            <h3 v-if="mostrartablaing == false">Ingredientes(detalles)</h3>
+            <button class="btn btn-secondary" @click="mostrartablaing = true" v-if="!mostrartablaing">Mostrar Ingredientes</button>
+            <button class="btn btn-secondary" @click="mostrartablaing = false" v-if="mostrartablaing">Ocultar ingredientes</button>
+            <table class="table" v-if="mostrartablaing == true">
+                <thead>
+                  <tr>
+                    <th scope="col">nombre</th>
+                    <th scope="col">cantidad</th>
+                    <th scope="col">Unidad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr scope="row" v-for="ingredientes in jsonObject.ingredientes">
+                    <th>{{ingredientes.nombre}}</th>
+                    <td v-if="ingredientes.cantidad">{{ingredientes.cantidad}}</td>
+                    <td v-else>0</td>
+                    <td v-if="ingredientes.unidad">{{ingredientes.unidad}}</td>
+                    <td v-else>Nada</td>
+                  </tr>
+            </table>
+            <h3 v-if="mostrartablapaso == true">Procedimiento</h3>        
+            <h3 v-if="mostrartablapaso == false">Procedimiento(detalles)</h3>         
+            <button class="btn btn-secondary" @click="mostrartablapaso = true" v-if="!mostrartablapaso">Mostrar Pasos</button>
+            <button class="btn btn-secondary" @click="mostrartablapaso = false" v-if="mostrartablapaso">Ocultar Pasos</button>
+            <table class="table" v-if="mostrartablapaso == true">
+                <thead>
+                  <tr>
+                    <th scope="col">Numero</th>
+                    <th scope="col">Descripcion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr scope="row" v-for="proceso in jsonObject.proceso">
+                    <th>{{proceso.numero}}</th>
+                    <td>{{proceso.descripcion}}</td>
+                  </tr>
+            </table>
+      </div>
+    </div>
+
+    <script>
+
+      const App = new Vue({
+        el: '#app',
+        data: {
+          jsonObject: {},
+          mostrartablaing: true,
+          mostrartablapaso: true,
+          TituloIngred: "Ingredientes:",
+          TituloPasos: "Procedimiento"
+
+        },
+        methods: {
+            init() {
+              fetch("https://raw.githubusercontent.com/byortega/LDM/master/JSON/tarea1.json")
+              .then(response => response.json())
+              .then(data => (this.jsonObject = data));
+              showTablaIngredientes(){
+              this.mostrarTablaIngredientes = true;
+              this.tituloTablaIngredientes = "Ingredientes (Detalles)";
+              },
+              ocultarTablaIngredientes(){
+                this.mostrarTablaIngredientes = false;
+                this.tituloTablaIngredientes = "Ingredientes";
+              },
+              showTablaProceso(){
+                this.mostrarTablaProceso = true;
+                this.tituloTablaProceso = "Proceso (Detalles)";
+              },
+              ocultarTablaProceso(){
+                this.mostrarTablaProceso = false;
+                this.tituloTablaProceso = "Proceso";
+              }
+            
+        },
+        mounted(){
+            this.init()
+        }
+      })
+    </script>
+  </body>
+</html>

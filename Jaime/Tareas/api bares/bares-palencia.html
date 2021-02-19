@@ -17,7 +17,7 @@
         <!--  CAMPOS SIMPLES -->
         <ul>
           <li>Ciudad: {{jsonObject.Ciudad}}</li>  
-          <li>Habitantes: {{jsonObject.Habitantes}}</li>  
+          <li v-if="jsonObject.Habitantes < 100000"><small style="color: dodgerblue;">Habitantes:</small>  {{jsonObject.Habitantes}}</li>  
           <li>Comunidad: {{jsonObject.Comunidad}}</li>
         </ul>
         <h2 class="alert-heading"> Bares</h2>
