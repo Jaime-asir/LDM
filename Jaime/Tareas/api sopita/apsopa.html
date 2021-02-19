@@ -73,23 +73,7 @@
               fetch("https://raw.githubusercontent.com/byortega/LDM/master/JSON/tarea1.json")
               .then(response => response.json())
               .then(data => (this.jsonObject = data));
-              showTablaIngredientes(){
-              this.mostrarTablaIngredientes = true;
-              this.tituloTablaIngredientes = "Ingredientes (Detalles)";
-              },
-              ocultarTablaIngredientes(){
-                this.mostrarTablaIngredientes = false;
-                this.tituloTablaIngredientes = "Ingredientes";
-              },
-              showTablaProceso(){
-                this.mostrarTablaProceso = true;
-                this.tituloTablaProceso = "Proceso (Detalles)";
-              },
-              ocultarTablaProceso(){
-                this.mostrarTablaProceso = false;
-                this.tituloTablaProceso = "Proceso";
-              }
-            
+            }
         },
         mounted(){
             this.init()
