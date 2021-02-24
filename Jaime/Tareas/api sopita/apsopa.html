@@ -19,7 +19,7 @@
             <h3 v-if="mostrartablaing == false">Ingredientes(detalles)</h3>
             <button class="btn btn-secondary" @click="mostrartablaing = true" v-if="!mostrartablaing">Mostrar Ingredientes</button>
             <button class="btn btn-secondary" @click="mostrartablaing = false" v-if="mostrartablaing">Ocultar ingredientes</button>
-            <table class="table" v-if="mostrartablaing == true">
+            <table style="background-color: gold;" class="table" v-if="mostrartablaing == true">
                 <thead>
                   <tr>
                     <th scope="col">nombre</th>
@@ -40,7 +40,7 @@
             <h3 v-if="mostrartablapaso == false">Procedimiento(detalles)</h3>         
             <button class="btn btn-secondary" @click="mostrartablapaso = true" v-if="!mostrartablapaso">Mostrar Pasos</button>
             <button class="btn btn-secondary" @click="mostrartablapaso = false" v-if="mostrartablapaso">Ocultar Pasos</button>
-            <table class="table" v-if="mostrartablapaso == true">
+            <table style="background-color: gold;" class="table" v-if="mostrartablapaso == true">
                 <thead>
                   <tr>
                     <th scope="col">Numero</th>
