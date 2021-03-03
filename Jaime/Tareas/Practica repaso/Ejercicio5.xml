@@ -1,20 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE cartelera [
-
-
-
+<!ELEMENT cartelera (peliculas,cines)>
+<!ELEMENT peliculas (pelicula+)>
+<!ELEMENT pelicula (titulo,ano,director,identificador)>
+<!ELEMENT cine (nombre,sala,identificador,sesiones)>
+<!ELEMENT cines (cine+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT sala (#PCDATA)>
+<!ELEMENT identificador (#PCDATA)>
+<!ELEMENT sesion (#PCDATA)>
+<!ELEMENT sesiones (sesion+)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
 ]>
+
 <cartelera>
     <peliculas>
-        <pelicula titulo="La invención de Hugo" salida="2011" director="Martin Scorsese" identificador="">
+        <pelicula>
+            <titulo>La invención de Hugo</titulo>
+            <ano>2011</ano>
+            <director>Martin Scorsese</director>
+            <identificador>1</identificador>
         </pelicula>
-        <pelicula titulo="John Carter" salida="2012" director="Andrew Stanton" identificador="">
-        </pelicula>   
-        <pelicula titulo="Intocable" salida="2001" director="Olivier Nakache" identificador="">
-        </pelicula> 
+        <pelicula>
+            <titulo>John Carter</titulo>
+            <ano>2012</ano>
+            <director>Andrew Stanton</director>
+            <identificador>2</identificador>
+        </pelicula>  
+        <pelicula>
+            <titulo>Intocable.</titulo>
+            <ano>2011</ano>
+            <director>Olivier Nakache</director>
+            <identificador>3</identificador>
+        </pelicula>
     </peliculas>
     <cines>
-        <cine nombre="ABC El Saler" sala="Sala 6" pelicula="La invención de Hugo" sesion="" ></cine>
-        <cine nombre="Lys" sala="Sala 3" pelicula="John Carter" sesion="" ></cine>
+        <cine>
+            <nombre>ABC El Saler.</nombre>
+            <sala>Sala 6.</sala>
+            <identificador>1</identificador>
+            <sesiones>
+                <sesion>18:00</sesion>
+                <sesion>20:25</sesion>
+                <sesion>22:50</sesion>
+            </sesiones>
+        </cine>
+        <cine>
+            <nombre>Lys.</nombre>
+            <sala>Sala 3</sala>
+            <identificador>2</identificador>
+            <sesiones>
+                <sesion>16:20</sesion>
+                <sesion>18:50</sesion>
+            </sesiones>
+        </cine>
     </cines>
 </cartelera>

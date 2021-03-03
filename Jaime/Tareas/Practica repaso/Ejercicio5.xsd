@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="cartelera">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="peliculas" type="xs:string"/>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pelicula">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulo" type="xs:string"/>
+                                        <xs:element name="ano" type="xs:string"/>
+                                        <xs:element name="director" type="xs:string"/>
+                                        <xs:element name="identificador" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                <xs:element name="cines" type="xs:string"/>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cine"/>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="sala" type="xs:string"/>
+                                        <xs:element name="identificador" type="xs:string"/>
+                                        <xs:element name="sesiones">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="sesion" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>    
+            </sequence>
+        <xs:complexType>
+    </xs:element>
+
+
