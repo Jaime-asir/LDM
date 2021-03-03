@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartelera [
+
+
+
+]>
+<cartelera>
+    <peliculas>
+        <pelicula titulo="La invención de Hugo" salida="2011" director="Martin Scorsese" identificador="">
+        </pelicula>
+        <pelicula titulo="John Carter" salida="2012" director="Andrew Stanton" identificador="">
+        </pelicula>   
+        <pelicula titulo="Intocable" salida="2001" director="Olivier Nakache" identificador="">
+        </pelicula> 
+    </peliculas>
+    <cines>
+        <cine nombre="ABC El Saler" sala="Sala 6" pelicula="La invención de Hugo" sesion="" ></cine>
+        <cine nombre="Lys" sala="Sala 3" pelicula="John Carter" sesion="" ></cine>
+    </cines>
+</cartelera>
