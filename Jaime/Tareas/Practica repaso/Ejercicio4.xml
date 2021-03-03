@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sudokus [
-<!ELEMENT sudokus (sudoku)+>
+<!ELEMENT sudokus (sudoku+)>
 <!ELEMENT sudoku (dato*)>
 <!ELEMENT dato (#PCDATA)>
 <!ATTLIST sudoku tama CDATA #REQUIRED>
