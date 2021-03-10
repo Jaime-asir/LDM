@@ -1,0 +1,48 @@
+palabras{
+    text-align: center;
+    font-size: xx-large;
+    
+}
+#P1{
+    border: black 5px solid;
+    margin:1%;
+    float: left;  
+    padding: 1%;  
+}
+#P2{
+    border: black 5px solid;
+    margin:1%;
+    float: left;
+    padding: 1%;
+}
+#P3{
+    border: black 5px solid;
+    margin:1%;
+    float: left;
+    padding: 1%;
+}
+español{
+ border: red 5px solid;
+ display: block;
+ margin-top: 2%;
+ margin-left: 2%;
+ margin-right: 2%;
+ margin-bottom: 2%;
+}
+inglés{
+    border: blue 5px solid;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+francés{
+    border: green 5px solid;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+español::first-letter{
+    color: red;
+}
