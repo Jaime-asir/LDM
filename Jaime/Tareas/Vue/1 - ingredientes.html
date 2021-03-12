@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>VUEJS</title>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+      <div v-for="drinks in jsonObject.drinks">
+      <h1 class="alert-heading">Nombre: {{drinks.strDrink}}</h1>
+      <p>Categoria: {{drinks.strCategory}}</p>
+      <p>Alcohol: {{drinks.strAlcoholic}}</p>
+      <p>Vaso: {{drinks.strGlass}}</p>
+      <h1 class="alert-heading">Ingredientes:</h1>
+      <ol>
+        <li v-if="drinks['strIngredient'+n]" v-for="n in 15">{{drinks['strIngredient'+n]}} ({{drinks['strMeasure'+n]}}) </li>
+      </ol>
+      <h1 class="alert-heading">Instrucciones:</h1>
+      <ul>
+          <li>{{drinks.strInstructionsIT}}</li>
+      </ul>
+      <a href="https://commons.wikimedia.org/wiki/File:Klassiche_Margarita.jpg">
+      <img width="300px" :src="drinks.strDrinkThumb" >
+      </a>
+    </div>
+
+    </div>
+
+    <script>
+
+      const App = new Vue({
+        el: '#app',
+        data: {
+          jsonObject: {}
+        },
+        methods: {
+            init() {
+              fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007")
+              .then(response => response.json())
+              .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted(){
+            this.init()
+        }
+      })
+    </script>
+  </body>
+</html>
