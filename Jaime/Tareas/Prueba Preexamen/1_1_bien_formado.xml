@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentos>
+  <documento>
+        <autor>Bartolomé Sintes Marco</autor>
+        <fecha fecha="30/05/11"/>
+        <contenido>
+            <punto id="1">XML significa eXtensible Markup Languages</punto>
+        </contenido>
+  </documento>
+</documentos>
