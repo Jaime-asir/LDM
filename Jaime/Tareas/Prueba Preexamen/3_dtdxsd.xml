@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<formula1 año="2011">
+<formula1 ano="2011">
   <carrera>
       <nombre>GP de Mónaco</nombre>
       <fecha>
@@ -8,7 +8,7 @@
           <año>2011</año>
       </fecha>
       <podium>
-          <orden n="1" nombre="Sebastian Vettel" escudería="Red Bull"/>
+          <orden n="1" nombre="Sebastian Vettel" escuderia="Red Bull"/>
           <orden n="2" nombre="Fernando Alonso" />
           <orden n="3" nombre="Jenson Button" />
       </podium>

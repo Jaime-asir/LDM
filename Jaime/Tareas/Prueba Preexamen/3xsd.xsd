@@ -9,13 +9,13 @@
                 <xs:element name="carrera">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nombre"/>
+                            <xs:element name="nombre" type="xs:string"/>
                             <xs:element name="fecha">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="dia" type="xs:string"/>
                                         <xs:element name="mes" type="xs:string"/>
-                                        <xs:element name="año" type="xs:string"/>
+                                        <xs:element name="ano" type="xs:string"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
@@ -27,7 +27,7 @@
                                                 <xs:sequence>
                                                     <xs:attribute name="n" type="xs:string"/>
                                                     <xs:attribute name="nombre" type="xs:string"/>
-                                                    <xs:attribute name="escudería" type="xs:string"/>
+                                                    <xs:attribute name="escuderia" type="xs:string"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>

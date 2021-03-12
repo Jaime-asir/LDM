@@ -13,7 +13,8 @@
                 <quejas>Todo bien</quejas>
             <articulos>
         </pedido>
-                    <Codigo>133345678Q</Codigo>
+        <pedido>
+            <Codigo>133345678Q</Codigo>
             <trabajador>Johny</trabajador>
             <fecha>22/1/2021</fecha>
             <observaciones>Envoltorio roto</observaciones>
