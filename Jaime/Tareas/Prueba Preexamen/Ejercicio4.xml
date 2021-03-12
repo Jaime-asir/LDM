@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+    <pedido>
+        <Codigo></Codigo>
+        <trabajador></trabajador>
+        <fecha></fecha>
+        <observaciones></observaciones>
+        <plazo></plazo>
+        <articulos>
+            <CodArt><CodArt>
+            <Cantidad></Cantidad>
+            <precio><precio>
+            <quejas></quejas>
+        <articulos>
+    <pedido>
+</pedidos>

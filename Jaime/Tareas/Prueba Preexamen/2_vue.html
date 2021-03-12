@@ -14,9 +14,15 @@
 
 <body>
     <div id="app" class="container">
-        <div class="alert alert-info" role="alert">
-            <h1>Nombre: {{jsonObject.name[1]}}</h1>
-            <p>Identificador: {{jsonObject.id}}</p>
+        <div class="alert alert-info" role="alert" >
+            <div v-for="vacio in jsonObject">
+                <h1 v-if="vacio.ph > 4.1 "><small style="color: red;">{{vacio.name}}</small></h1>
+                <h1 v-else="vacio.ph < 4.1  "><small style="color: black;">{{vacio.name}}</small></h1>
+                <a href="https://api.punkapi.com/v2/beers?per_page=5"><img :src="vacio.image_url" width="100px"></a>
+                <ol>Ingredientes:
+                    <li v-for="malt in vacio.ingredients.malt">{{malt.name}}</li>
+                </ol>
+            </div>
         </div>
     </div>
 </body>
