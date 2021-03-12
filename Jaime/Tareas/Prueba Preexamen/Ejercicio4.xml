@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pedidos>
-    <pedido>
-        <Codigo></Codigo>
-        <trabajador></trabajador>
-        <fecha></fecha>
-        <observaciones></observaciones>
-        <plazo></plazo>
-        <articulos>
-            <CodArt><CodArt>
-            <Cantidad></Cantidad>
-            <precio><precio>
-            <quejas></quejas>
-        <articulos>
-    <pedido>
-</pedidos>
+    <pedidos>
+        <pedido>
+            <Codigo>12345678Q</Codigo>
+            <trabajador>John</trabajador>
+            <fecha>20/10/2021</fecha>
+            <observaciones>Nada</observaciones>
+            <plazo>15 dias</plazo>
+            <articulos>
+                <CodArt>ABC-3-4-5<CodArt>
+                <Cantidad>2</Cantidad>
+                <precio>5€<precio>
+                <quejas>Todo bien</quejas>
+            <articulos>
+        </pedido>
+                    <Codigo>133345678Q</Codigo>
+            <trabajador>Johny</trabajador>
+            <fecha>22/1/2021</fecha>
+            <observaciones>Envoltorio roto</observaciones>
+            <plazo>14 dias</plazo>
+            <articulos>
+                <CodArt>BCA-5-4-5<CodArt>
+                <Cantidad>2</Cantidad>
+                <precio>5€<precio>
+                <quejas>Todo bien</quejas>
+            <articulos>
+        </pedido>
+    </pedidos>
