@@ -11,6 +11,68 @@
 
   <body>
     <div id="app" class="container">
+      <div v-for="results in jsonObject.results" v-if="results.gender == 'male'" style="color: blue; background:yellow ;">
+        <h1>{{results.name.title}} {{results.name.first}} {{results.name.last}}</h1>
+        
+        <h3>Genero</h3>
+        <p>{{results.gender}}</p>
+        
+        <h3>Edad</h3>
+        <p>{{results.dob.age}} años. </p>
+        
+        <h3>Imagen</h3>
+        <img :src="results.picture.large">
+        
+        <h3>Localizacion</h3>
+        <p>{{results.location.street.name}}, {{results.location.city}}, {{results.location.state}}, {{results.location.country}}</p>
+        
+        <h3>Cordenadas:</h3>
+          <ul>
+            <li>Altitud: {{results.location.coordinates.latitude}}</li>
+            <li>Longitud: {{results.location.coordinates.longitude}}</li>
+          </ul>
+
+        <h3>Identidad electronica</h3>
+
+        <ul>
+          <li>Usuario: {{results.login.username}}</li>
+          <li>Correo electronico: {{results.email}}</li>
+          <li>Contraseña: {{results.login.password}}</li>
+        </ul>
+
+      </div>
+
+      <div v-for="results in jsonObject.results" v-if="results.gender != 'male'" style="color: violet; background: white;">
+        <h1>{{results.name.title}} {{results.name.first}} {{results.name.last}}</h1>
+        
+        <h3>Genero</h3>
+        <p>{{results.gender}}</p>
+        
+        <h3>Edad</h3>
+        <p>{{results.dob.age}} años. </p>
+        
+        <h3>Imagen</h3>
+        <img :src="results.picture.large">
+        
+        <h3>Localizacion</h3>
+        <p>{{results.location.street.name}}, {{results.location.city}}, {{results.location.state}}, {{results.location.country}}</p>
+        
+        <h3>Cordenadas:</h3>
+          <ul>
+            <li>Altitud: {{results.location.coordinates.latitude}}</li>
+            <li>Longitud: {{results.location.coordinates.longitude}}</li>
+          </ul>
+
+        <h3>Identidad electronica</h3>
+
+        <ul>
+          <li>Usuario: {{results.login.username}}</li>
+          <li>Correo electronico: {{results.email}}</li>
+          <li>Contraseña: {{results.login.password}}</li>
+        </ul>
+
+      </div>
+
     </div>
 
     <script>
@@ -22,7 +84,7 @@
         },
         methods: {
             init() {
-              fetch("https://pokeapi.co/api/v2/pokemon/1/")
+              fetch("https://randomuser.me/api/")
               .then(response => response.json())
               .then(data => (this.jsonObject = data));
             }

@@ -11,10 +11,10 @@
 
   <body>
     <div id="app" class="container">
-      <div>
-      <h1>Nombre:</h1>
-      </div>
+      <h1>Producto</h1>
+        <p>{{jsonObject.code}}</p>
     </div>
+    
 
     <script>
 
@@ -25,7 +25,7 @@
         },
         methods: {
             init() {
-              fetch("https://world.openfoodfacts.org/api/v0/product/737628064502.json")
+              fetch("https://world.openfoodfacts.org/api/v0/product/3045140105502.json")
               .then(response => response.json())
               .then(data => (this.jsonObject = data));
             }
