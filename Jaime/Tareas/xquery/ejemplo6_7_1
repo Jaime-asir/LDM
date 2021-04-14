@@ -1,0 +1,7 @@
+replace value of node
+doc("bailes.xml")//bailes/baile[1]/profesor
+with "Angel Correllada"
+,
+replace node
+doc("bailes.xml")//bailes/baile[1]/plazas
+with <plazas>14</plazas>

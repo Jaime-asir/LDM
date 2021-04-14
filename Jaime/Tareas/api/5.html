@@ -7,15 +7,32 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>VUEJS</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
   </head>
   <body>
     <div id="app" class="container">
-        <div v-for="vacio in jsonObject">
-            <h1>Brand:{{vacio.brand}}</h1>
-                <img :src="vacio.image_link">
-            <p>{{vacio.price}}</p>
-            <p v-if="vacio.rating > 4"><small style="color: firebrick;">{{vacio.rating}}</small></p>
-            <p v-else><small style="color: green;">{{vacio.rating}}</small></p>
+        <div v-for="vacio in jsonObject" >
+          <div class="card text-dark bg-danger mb-3" class="card" style="width: 18rem;">
+            <img :src="vacio.image_link" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Marca: {{vacio.brand}}</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: {{vacio.price}}</li>
+              <li class="list-group-item">Tipo: {{vacio.product_type}}</li>
+              <li class="list-group-item">Numero identificador: {{vacio.id}}</li>
+            </ul>
+            <div class="card-body">
+              <a :href="vacio.product_link" class="card-link">Producto</a>
+              <a :href="vacio.website_link" class="card-link">Website</a><br>
+              <hr>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary"><a >Colores</a></button>
+            </div>
+            </div>
+          </div>
+            </div>
         </div>
 
     </div>
