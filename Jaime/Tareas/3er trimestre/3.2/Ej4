@@ -1,0 +1,5 @@
+for $modulo in doc('3.2otro.xml')/fp/asignaturas
+let $asignatura:= $modulo/asignatura
+let $count:= count($asignatura)
+return 
+<asignaturas> cuenta={$count}</asignaturas>

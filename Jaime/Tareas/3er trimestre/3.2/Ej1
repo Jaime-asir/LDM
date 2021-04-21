@@ -1,0 +1,3 @@
+for $alumnos in doc('3.2otro.xml')//fp/alumnos
+let $nombre:= /$alumnos/alumno/apenom
+return $nombre

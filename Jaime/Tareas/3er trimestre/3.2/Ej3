@@ -1,0 +1,8 @@
+for $alumno in doc("3.2otro.xml")//fp/alumnos/alumno
+order by $alumno/apenom descending
+return
+
+<alumno>
+	{$alumno/apenom}
+	{$alumno/telef}
+</alumno>

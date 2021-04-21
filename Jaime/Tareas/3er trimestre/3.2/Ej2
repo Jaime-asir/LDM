@@ -1,0 +1,3 @@
+for $nota in doc("3.2otro.xml")//fp/notas/nota
+where $nota/alumn = 'n43483437'
+return $nota/calificacion
