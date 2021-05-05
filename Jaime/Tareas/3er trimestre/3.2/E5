@@ -1,0 +1,11 @@
+for $alumnos in doc('3.2otro.xml')//fp/alumnos/alumno
+for $nota in doc('3.2otro.xml')//fp/notas/nota
+for $asig in doc('3.2otro.xml')//fp/asignaturas/asignatura
+where $alumnos/cod = $nota/alumn and $nota/calificacion and $asig/cod = $nota/asig and $asig/nombre = "LMSGI"
+order by $nota/calificacion
+return  
+<alumnos>
+	{$alumnos/apenom}
+	{$nota/calificacion}
+	{$asig/nombre}
+</alumnos>
