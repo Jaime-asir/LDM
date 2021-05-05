@@ -1,0 +1,5 @@
+for $asignatura in doc("3.2otro.xml")//fp/asignaturas/asignatura
+return
+<alumno>
+	{$asignatura/nombre}
+</alumno>

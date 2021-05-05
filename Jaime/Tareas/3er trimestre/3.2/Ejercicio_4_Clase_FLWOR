@@ -1,0 +1,6 @@
+for $nota in doc("3.2otro.xml")//fp/notas/nota
+where $nota/asig = 'a1'
+return
+<Notas_a1>
+	{$nota/calificacion}
+</Notas_a1>
