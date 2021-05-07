@@ -1,0 +1,4 @@
+for $n in doc ("1 - software.xml")//software-libre/lanzamientos/lanzamiento
+for $a in doc ("1 - software.xml")//software-libre/distribuciones/distribucion
+where $n/@distribucion=$a/@id and $a/derivada ='ubuntu'
+return $n/@escritorio

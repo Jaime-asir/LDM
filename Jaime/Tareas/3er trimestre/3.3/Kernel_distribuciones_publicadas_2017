@@ -1,0 +1,1 @@
+doc("1 - software.xml")/software-libre/lanzamientos/lanzamiento[@año = "2017"]/@kernel

@@ -1,0 +1,2 @@
+for $nombre in doc("1 - software.xml")/software-libre/distribuciones/distribucion
+return data ($nombre/nombre)

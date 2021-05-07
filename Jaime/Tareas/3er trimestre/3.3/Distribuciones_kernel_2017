@@ -1,0 +1,4 @@
+for $n in doc ("1 - software.xml")//software-libre/lanzamientos/lanzamiento
+for $a in doc ("1 - software.xml")//software-libre/kernels/kernel
+where $a/@año='2017' and $n/@kernel=$a/@id
+return $n/@distribucion
