@@ -1,0 +1,3 @@
+for $encuesta in doc("2 - elecciones.xml")/elecciones/encuestas/encuesta
+where $encuesta/origen="El País"
+return $encuesta/fecha

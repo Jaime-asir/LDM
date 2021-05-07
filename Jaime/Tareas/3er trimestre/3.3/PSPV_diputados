@@ -1,0 +1,3 @@
+for $partido in doc("2 - elecciones.xml")/elecciones/resultados/eleccion/partido
+where $partido/@nombre="PSPV" 
+return $partido
