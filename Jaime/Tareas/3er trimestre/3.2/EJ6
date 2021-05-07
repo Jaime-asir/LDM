@@ -1,0 +1,7 @@
+for $n in doc ("Practica3.xml")//practica_ldm/notas/nota
+for $a in doc ("Practica3.xml")//practica_ldm/alumnos/alumno
+for $as in doc ("Practica3.xml")//practica_ldm/asignaturas/asignatura
+where $as/nombre='FH' and $n/alum=$a/cod and $n/asig=$as/cod and $n/calificacion>4
+return
+<alumno> {$a/apenom}{$n/calificacion}
+</alumno>

@@ -1,3 +1,4 @@
-for $alumnos in doc('3.2otro.xml')//fp/alumnos
-let $nombre:= /$alumnos/alumno/apenom
-return $nombre
+for $nota in doc("Practica3.xml")//practica_ldm/notas/nota
+where $nota/calificacion>4.0
+return ($nota/alum, $nota/asig,  $nota/calificacion  ) 
+doc ("Practica3.xml")//practica_ldm/notas/nota[calificacion >'4.0']/(alum|calificacion
